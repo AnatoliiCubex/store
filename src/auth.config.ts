@@ -6,14 +6,17 @@ export const authConfig = {
   },
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
-      console.log(123);
       const isLoggedIn = !!auth?.user;
-      const isOnExample = nextUrl.pathname.startsWith("/example");
-      if (isOnExample) {
-        return isLoggedIn ? true : false;
-      } else if (isLoggedIn) {
-        return Response.redirect(new URL("/example", nextUrl));
+      const isOnLoginPage = nextUrl.pathname === "/login";
+
+      if (isLoggedIn) {
+        return true;
       }
+
+      if (!isLoggedIn && !isOnLoginPage) {
+        return Response.redirect(new URL("/login", nextUrl));
+      }
+
       return true;
     },
   },
