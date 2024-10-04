@@ -13,12 +13,7 @@ function Page() {
       <CardTitle className='font-bold text-2xl text-center'>Login</CardTitle>
       <CardContent>
         <form action={login} className='flex flex-col gap-2'>
-          <Button
-            type='submit'
-            name='action'
-            value='google'
-            className='border-gray-300 bg-white hover:bg-gray-100 border w-full text-black'
-          >
+          <Button type='submit' name='action' value='google' variant='outline'>
             <GoogleLogoIcon className='mr-2 w-5 h-5' />
             Sign in with Google
           </Button>

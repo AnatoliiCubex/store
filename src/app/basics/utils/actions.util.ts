@@ -1,6 +1,6 @@
 "use server";
 
-import { signIn } from "~/auth";
+import { signIn, signOut } from "~/auth";
 
 export const login = async (formData: FormData) => {
   const action = formData.get("action");
@@ -9,5 +9,5 @@ export const login = async (formData: FormData) => {
 };
 
 export const logout = async () => {
-  console.log("logout");
+  await signOut({ redirectTo: "/login" });
 };
