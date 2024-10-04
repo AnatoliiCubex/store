@@ -22,6 +22,9 @@ export const useHomeViewStyle = () => {
     "pt-8",
     "relative",
     "text-center",
+    "hover:shadow-md",
+    "hover:scale-105",
+    "duration-300",
   ].join(" ");
 
   const cardFooter = [

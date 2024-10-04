@@ -2,8 +2,8 @@ import React from "react";
 
 import Image from "next/image";
 
-import { logout } from "~/app/basics/utils/actions.util";
-import { Button } from "~/app/components/ui/button";
+import HeaderMenu from "~/app/components/header/components/header-menu";
+import Logo from "~/app/components/logo/logo";
 import { auth } from "~/auth";
 
 const Header = async () => {
@@ -11,19 +11,18 @@ const Header = async () => {
 
   return (
     <header className='flex justify-between items-center bg-gray-100 p-4'>
-      <div className='flex items-center gap-4'>
+      <Logo />
+
+      <div className='flex items-center gap-3'>
         <Image
           src={session?.user?.image ?? ""}
           alt={session?.user?.name ?? "user_image"}
-          width={48}
-          height={48}
+          width={40}
+          height={40}
           className='rounded-full'
         />
-        <h1 className='font-bold text-lg'>{session?.user?.name}</h1>
+        <HeaderMenu />
       </div>
-      <form action={logout}>
-        <Button type='submit'>Sign out</Button>
-      </form>
     </header>
   );
 };
