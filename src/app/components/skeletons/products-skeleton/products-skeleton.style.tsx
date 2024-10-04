@@ -1,6 +1,6 @@
-import { SHIMMER_ANIMATION } from "~/app/basics/constants/example.constant";
+import { SHIMMER_ANIMATION } from "~/app/basics/constants/common.constant";
 
-export const useExampleSkeletonStyle = () => {
+export const useProductsSkeletonStyle = () => {
   const container = [
     "gap-4",
     "grid",

@@ -2,7 +2,9 @@ import type { PropsWithChildren } from "react";
 
 import localFont from "next/font/local";
 
+import Header from "~/app/components/header/header";
 import "~/app/styles/globals.css";
+import { auth } from "~/auth";
 
 const geistSans = localFont({
   src: "../../styles/fonts/GeistVF.woff",
@@ -15,13 +17,18 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export default function HomeLayout({ children }: PropsWithChildren) {
+export default async function HomeLayout({ children }: PropsWithChildren) {
+  const session = await auth();
+
   return (
     <html lang='en'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className='flex flex-col h-screen'>
+          {session?.user ? <Header /> : null}
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );

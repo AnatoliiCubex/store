@@ -1,14 +1,14 @@
 import { NextResponse } from "next/server";
 
-import { ExampleService } from "~/app/api/services/example.service";
+import { ProductService } from "~/app/api/services/product.service";
 
 import type { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
   try {
-    const products = await ExampleService.getExample();
+    const products = await ProductService.getProducts();
 
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    // await new Promise((resolve) => setTimeout(resolve, 2000));
 
     return NextResponse.json(products, { status: 200 });
   } catch (error) {

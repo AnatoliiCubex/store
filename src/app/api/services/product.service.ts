@@ -1,7 +1,7 @@
 import { api } from "~/app/api";
 
-export const ExampleService = {
-  getExample: async () => {
+export const ProductService = {
+  getProducts: async () => {
     return (await api.get("/products")).data;
   },
 };

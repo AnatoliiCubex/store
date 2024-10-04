@@ -1,9 +1,9 @@
 import React from "react";
 
-import { useExampleSkeletonStyle } from "~/app/components/skeletons/example-skeleton/example-skeleton.style";
+import { useProductsSkeletonStyle } from "~/app/components/skeletons/products-skeleton/products-skeleton.style";
 
-const ExampleSkeleton = () => {
-  const styles = useExampleSkeletonStyle();
+const ProductsSkeleton = () => {
+  const styles = useProductsSkeletonStyle();
 
   return (
     <div className={styles.container}>
@@ -18,4 +18,4 @@ const ExampleSkeleton = () => {
   );
 };
 
-export default ExampleSkeleton;
+export default ProductsSkeleton;

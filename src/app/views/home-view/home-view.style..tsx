@@ -1,4 +1,4 @@
-export const useExampleViewStyle = () => {
+export const useHomeViewStyle = () => {
   const container = [
     "gap-4",
     "grid",
@@ -17,8 +17,10 @@ export const useExampleViewStyle = () => {
     "flex",
     "flex-col",
     "items-center",
-    "gap-7",
+    "gap-2",
     "p-4",
+    "pt-8",
+    "relative",
     "text-center",
   ].join(" ");
 
@@ -33,9 +35,24 @@ export const useExampleViewStyle = () => {
     "font-bold",
   ].join(" ");
 
+  const productCategory = [
+    "top-2",
+    "right-2",
+    "absolute",
+    "bg-white",
+    "px-2",
+    "py-1",
+    "rounded-md",
+    "text-sm",
+  ].join(" ");
+
+  const imageContainer = ["relative", "w-full", "h-40"].join(" ");
+
   return {
     container,
     card,
     cardFooter,
+    productCategory,
+    imageContainer,
   };
 };
