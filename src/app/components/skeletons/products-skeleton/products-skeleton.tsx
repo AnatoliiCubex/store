@@ -9,6 +9,7 @@ const ProductsSkeleton = () => {
     <div className={styles.container}>
       {Array.from({ length: 20 }).map((_, i) => (
         <div key={i} className={styles.card}>
+          <div className={styles.image} />
           <h2 className={styles.title} />
           <p className={styles.description} />
           <p className={styles.price} />

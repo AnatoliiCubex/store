@@ -23,12 +23,10 @@ export default async function HomeLayout({ children }: PropsWithChildren) {
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <div className='flex flex-col h-screen'>
-          {session?.user ? <Header /> : null}
-          <main>{children}</main>
-        </div>
+        {session?.user ? <Header /> : null}
+        <main>{children}</main>
       </body>
     </html>
   );

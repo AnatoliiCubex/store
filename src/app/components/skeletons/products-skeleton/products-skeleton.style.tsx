@@ -33,5 +33,7 @@ export const useProductsSkeletonStyle = () => {
   const description = "bg-gray-200 rounded-md w-full h-28";
   const price = "bg-gray-200 rounded-md w-28 h-8 self-end";
 
-  return { container, card, title, description, price };
+  const image = "inset-0 bg-gray-200 rounded-md w-44 h-44";
+
+  return { container, card, title, description, price, image };
 };

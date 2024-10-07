@@ -1,18 +1,4 @@
-export const useHomeViewStyle = () => {
-  const container = [
-    "gap-4",
-    "grid",
-    "grid-cols-1",
-    "sm:grid-cols-2",
-    "md:grid-cols-3",
-    "lg:grid-cols-4",
-    // "sm:pl-52",
-    "p-8",
-    "sm:p-10",
-    "pb-20",
-    "min-h-screen",
-  ].join(" ");
-
+export const useProductCardStyle = () => {
   const card = [
     "flex",
     "flex-col",
@@ -51,11 +37,15 @@ export const useHomeViewStyle = () => {
 
   const imageContainer = ["relative", "w-full", "h-40"].join(" ");
 
+  const ratingContaner = ["flex", "items-center", "mb-2", "text-gray-400"].join(
+    " "
+  );
+
   return {
-    container,
     card,
     cardFooter,
     productCategory,
     imageContainer,
+    ratingContaner,
   };
 };

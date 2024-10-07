@@ -1,14 +1,16 @@
-import { Suspense } from "react";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
-import ProductsSkeleton from "~/app/components/skeletons/products-skeleton/products-skeleton";
-import HomeView from "~/app/views/home-view/home-view";
+import { Button } from "~/app/components/ui/button";
 
 export default async function Page() {
   return (
-    <main>
-      <Suspense fallback={<ProductsSkeleton />}>
-        <HomeView />
-      </Suspense>
-    </main>
+    <div className='flex justify-center items-center h-[calc(100vh-72px)]'>
+      <Link href='/products'>
+        <Button>
+          Products <ArrowRightIcon className='ml-2 w-5 h-5' />
+        </Button>
+      </Link>
+    </div>
   );
 }

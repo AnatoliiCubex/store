@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import HeaderMenu from "~/app/components/header/components/header-menu";
 import Logo from "~/app/components/logo/logo";
@@ -11,7 +12,9 @@ const Header = async () => {
 
   return (
     <header className='flex justify-between items-center bg-gray-100 p-4'>
-      <Logo />
+      <Link href='/'>
+        <Logo />
+      </Link>
 
       <div className='flex items-center gap-3'>
         <Image
