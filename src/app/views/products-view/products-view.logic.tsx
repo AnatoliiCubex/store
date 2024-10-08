@@ -1,6 +1,6 @@
-import { nextApiRoute } from "~/app/api";
+import { nextApiRoute } from "~/api";
 
-import type { Product } from "~/app/basics/types/product.type";
+import type { Product } from "~/basics/types/product.type";
 
 export const useProductsViewLogic = async () => {
   const products = (await nextApiRoute.get<Product[]>("")).data;

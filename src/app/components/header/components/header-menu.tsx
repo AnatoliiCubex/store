@@ -3,14 +3,14 @@ import React from "react";
 import { LogOut, Menu, Settings } from "lucide-react";
 import Link from "next/link";
 
-import { logout } from "~/app/basics/utils/actions.util";
-import { Button } from "~/app/components/ui/button";
+import { logout } from "~/basics/utils/actions.util";
+import { Button } from "~/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "~/app/components/ui/dropdown-menu";
+} from "~/components/ui/dropdown-menu";
 
 const HeaderMenu = () => {
   return (

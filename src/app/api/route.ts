@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { ProductService } from "~/app/api/services/product.service";
+import { ProductService } from "~/api/services/product.service";
 
 import type { NextRequest } from "next/server";
 

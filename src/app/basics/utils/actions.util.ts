@@ -1,6 +1,6 @@
 "use server";
 
-import { signIn, signOut } from "~/auth";
+import { signIn, signOut } from "../../../auth";
 
 export const login = async (formData: FormData) => {
   const action = formData.get("action");

@@ -11,10 +11,10 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "~/app/components",
-    "utils": "~/app/basics/utils/common.util",
-    "ui": "~/app/components/ui",
-    "lib": "~/app/basics/utils",
-    "hooks": "~/app/hooks"
+    "components": "~/components",
+    "utils": "~/basics/utils/common.util",
+    "ui": "~/components/ui",
+    "lib": "~/basics/utils",
+    "hooks": "~/hooks"
   }
 }

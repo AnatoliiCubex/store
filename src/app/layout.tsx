@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from "react";
 
-import HomeLayout from "~/app/layouts/home-layout/home-layout";
+import HomeLayout from "~/layouts/home-layout/home-layout";
 
 import type { Metadata } from "next";
 

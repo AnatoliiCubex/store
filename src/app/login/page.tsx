@@ -2,10 +2,10 @@ import React from "react";
 
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
-import { login } from "~/app/basics/utils/actions.util";
-import { Button } from "~/app/components/ui/button";
-import { Card, CardContent, CardTitle } from "~/app/components/ui/card";
-import GoogleLogoIcon from "~/app/components/ui/google-logo-icon";
+import { login } from "~/basics/utils/actions.util";
+import { Button } from "~/components/ui/button";
+import { Card, CardContent, CardTitle } from "~/components/ui/card";
+import GoogleLogoIcon from "~/components/ui/google-logo-icon";
 
 function Page() {
   return (

@@ -1,4 +1,4 @@
-import { SHIMMER_ANIMATION } from "~/app/basics/constants/common.constant";
+import { SHIMMER_ANIMATION } from "~/basics/constants/common.constant";
 
 export const useProductsSkeletonStyle = () => {
   const container = [

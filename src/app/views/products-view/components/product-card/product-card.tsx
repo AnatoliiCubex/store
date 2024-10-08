@@ -4,16 +4,16 @@ import { StarFilledIcon } from "@radix-ui/react-icons";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 
-import { Button } from "~/app/components/ui/button";
+import { Button } from "~/components/ui/button";
 import {
   Card,
   CardDescription,
   CardFooter,
   CardTitle,
-} from "~/app/components/ui/card";
-import { useProductCardStyle } from "~/app/views/products-view/components/product-card/product-card.style";
+} from "~/components/ui/card";
+import { useProductCardStyle } from "~/views/products-view/components/product-card/product-card.style";
 
-import type { Product } from "~/app/basics/types/product.type";
+import type { Product } from "~/basics/types/product.type";
 
 type Props = {
   product: Product;

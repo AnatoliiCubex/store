@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useProductsSkeletonStyle } from "~/app/components/skeletons/products-skeleton/products-skeleton.style";
+import { useProductsSkeletonStyle } from "~/components/skeletons/products-skeleton/products-skeleton.style";
 
 const ProductsSkeleton = () => {
   const styles = useProductsSkeletonStyle();

@@ -3,9 +3,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import HeaderMenu from "~/app/components/header/components/header-menu";
-import Logo from "~/app/components/logo/logo";
-import { auth } from "~/auth";
+import HeaderMenu from "~/components/header/components/header-menu";
+import Logo from "~/components/logo/logo";
+
+import { auth } from "../../../auth";
 
 const Header = async () => {
   const session = await auth();

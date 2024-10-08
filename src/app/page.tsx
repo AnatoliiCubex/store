@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
-import { Button } from "~/app/components/ui/button";
+import { Button } from "~/components/ui/button";
 
 export default async function Page() {
   return (

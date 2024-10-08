@@ -2,9 +2,10 @@ import type { PropsWithChildren } from "react";
 
 import localFont from "next/font/local";
 
-import Header from "~/app/components/header/header";
-import "~/app/styles/globals.css";
-import { auth } from "~/auth";
+import Header from "~/components/header/header";
+import "~/styles/globals.css";
+
+import { auth } from "../../../auth";
 
 const geistSans = localFont({
   src: "../../styles/fonts/GeistVF.woff",
