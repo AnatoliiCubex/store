@@ -1,21 +1,16 @@
 import type { PropsWithChildren } from "react";
 
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 
 import Header from "~/components/header/header";
 import "~/styles/globals.css";
 
 import { auth } from "../../../auth";
 
-const geistSans = localFont({
-  src: "../../styles/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../../styles/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export default async function HomeLayout({ children }: PropsWithChildren) {
@@ -24,10 +19,17 @@ export default async function HomeLayout({ children }: PropsWithChildren) {
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+        className={`${inter.className}  antialiased flex flex-col min-h-screen`}
+        style={{
+          backgroundImage:
+            "url('https://asset.gecdesigns.com/img/background-templates/abstract-wavy-purple-and-pink-gradient-background-design-sr31012402-1706715431755-cover.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
       >
         {session?.user ? <Header /> : null}
-        <main>{children}</main>
+        <main className='flex flex-grow w-full'>{children}</main>
       </body>
     </html>
   );

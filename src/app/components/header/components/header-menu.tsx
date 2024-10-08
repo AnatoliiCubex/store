@@ -16,13 +16,9 @@ const HeaderMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button
-          variant='outline'
-          size='icon'
-          className='focus-visible:ring-transparent focus:ring-transparent'
-        >
-          <Menu className='w-5 h-5' />
-        </Button>
+        <button className='text-white focus:outline-none'>
+          <Menu className='w-7 h-7' />
+        </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
         <DropdownMenuItem className='h-10'>
