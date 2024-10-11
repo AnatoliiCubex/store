@@ -1,9 +1,7 @@
-import { nextApiRoute } from "~/api";
-
-import type { Product } from "~/basics/types/product.type";
+import { ProductService } from "~/api/services/product.service";
 
 export const useProductsViewLogic = async () => {
-  const products = (await nextApiRoute.get<Product[]>("")).data;
+  const products = await ProductService.getProducts();
 
   return { data: { products }, state: {}, setState: {}, handlers: {} };
 };
