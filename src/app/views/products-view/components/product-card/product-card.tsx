@@ -3,6 +3,7 @@ import React from "react";
 import { StarFilledIcon } from "@radix-ui/react-icons";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Button } from "~/components/ui/button";
 import {
@@ -47,9 +48,11 @@ const ProductCard = ({ product }: Props) => {
 
       <CardFooter className={styles.cardFooter}>
         <div>${product.price}</div>
-        <Button>
-          View <ArrowRightIcon className='ml-2 w-4 h-4' />
-        </Button>
+        <Link href={`/products/${product.id}`}>
+          <Button>
+            View <ArrowRightIcon className='ml-2 w-4 h-4' />
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );

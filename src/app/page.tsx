@@ -17,7 +17,7 @@ export default async function Page() {
           />
         </div>
         <div className='flex sm:flex-row flex-col sm:space-x-4 space-y-4 sm:space-y-0'>
-          <Button className='bg-pink-600 hover:bg-pink-700 text-sm text-white sm:text-base'>
+          <Button variant='outline' className='text-black text-sm sm:text-base'>
             Get Started
           </Button>
           <Button

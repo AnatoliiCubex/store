@@ -9,6 +9,6 @@ export const nextApiRoute = axios.create({
 });
 
 api.interceptors.request.use(async (config) => {
-  // await new Promise((resolve) => setTimeout(resolve, 2000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   return config;
 });
