@@ -12,6 +12,7 @@ export const useProductsSkeletonStyle = () => {
     "sm:p-10",
     "pb-20",
     "min-h-screen",
+    "w-full",
   ].join(" ");
 
   const card = [

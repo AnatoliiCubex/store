@@ -35,7 +35,7 @@ export const useProductCardStyle = () => {
     "text-sm",
   ].join(" ");
 
-  const imageContainer = ["relative", "w-full", "h-40"].join(" ");
+  const imageContainer = ["relative", "w-full", "h-40", "mt-5"].join(" ");
 
   const ratingContaner = ["flex", "items-center", "mb-2", "text-gray-400"].join(
     " "
