@@ -19,7 +19,7 @@ const Header = async () => {
         <Logo />
       </Link>
 
-      <div className='flex items-center gap-3'>
+      <div className='flex items-center gap-5'>
         {NAVIGATION_LINKS.map((link) => (
           <Link key={link.href} href={link.href}>
             <Button className='p-0 font-bold text-white' variant='link'>
@@ -28,13 +28,15 @@ const Header = async () => {
           </Link>
         ))}
 
-        <Image
-          src={session?.user?.image ?? ""}
-          alt={session?.user?.name ?? "user_image"}
-          width={40}
-          height={40}
-          className='ml-5 rounded-full'
-        />
+        <Link href='/profile'>
+          <Image
+            src={session?.user?.image ?? ""}
+            alt={session?.user?.name ?? "user_image"}
+            width={40}
+            height={40}
+            className='ml-5 rounded-full'
+          />
+        </Link>
         <HeaderMenu />
       </div>
     </header>

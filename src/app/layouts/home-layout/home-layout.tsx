@@ -2,7 +2,6 @@ import type { PropsWithChildren } from "react";
 
 import { Inter } from "next/font/google";
 
-import { HEADER_HEIGHT } from "~/basics/constants/common.constant";
 import Header from "~/components/header/header";
 import "~/styles/globals.css";
 
