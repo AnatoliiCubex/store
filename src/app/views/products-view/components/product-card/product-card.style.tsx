@@ -9,8 +9,12 @@ export const useProductCardStyle = () => {
     "relative",
     "text-center",
     "hover:shadow-md",
-    "hover:scale-105",
+    "hover:translate-y-[-5px]",
     "duration-300",
+    "bg-purple-500/60",
+    "backdrop-blur-sm",
+    "border-none",
+    "text-white",
   ].join(" ");
 
   const cardFooter = [
@@ -28,7 +32,6 @@ export const useProductCardStyle = () => {
     "top-2",
     "right-2",
     "absolute",
-    "bg-white",
     "px-2",
     "py-1",
     "rounded-md",
@@ -37,9 +40,7 @@ export const useProductCardStyle = () => {
 
   const imageContainer = ["relative", "w-full", "h-40", "mt-5"].join(" ");
 
-  const ratingContaner = ["flex", "items-center", "mb-2", "text-gray-400"].join(
-    " "
-  );
+  const ratingContaner = ["flex", "items-center", "mb-2"].join(" ");
 
   return {
     card,

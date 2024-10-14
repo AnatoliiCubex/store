@@ -44,12 +44,14 @@ const ProductCard = ({ product }: Props) => {
         <span className='ml-1'>({product.rating.count})</span>
       </div>
 
-      <CardDescription>{product.description}</CardDescription>
+      <CardDescription className='text-white'>
+        {product.description}
+      </CardDescription>
 
       <CardFooter className={styles.cardFooter}>
         <div>${product.price}</div>
         <Link href={`/products/${product.id}`}>
-          <Button>
+          <Button variant='outline' className='text-black'>
             View <ArrowRightIcon className='ml-2 w-4 h-4' />
           </Button>
         </Link>

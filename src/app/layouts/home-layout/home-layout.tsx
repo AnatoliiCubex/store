@@ -30,9 +30,7 @@ export default async function HomeLayout({ children }: PropsWithChildren) {
         }}
       >
         {session?.user ? <Header /> : null}
-        <main className={`flex flex-grow w-full pt-[${HEADER_HEIGHT}px]`}>
-          {children}
-        </main>
+        <main className={`flex flex-grow w-full pt-[73px]`}>{children}</main>
       </body>
     </html>
   );

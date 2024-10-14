@@ -17,22 +17,32 @@ export const useProductViewStyle = () => {
     "text-white",
   ].join(" ");
 
-  const cardContent = ["flex", "md:flex-row", "flex-col", "gap-7", "p-7"].join(
+  const cardContent = ["flex", "lg:flex-row", "flex-col", "gap-7", "p-7"].join(
     " "
   );
 
-  const leftSide = ["flex", "flex-col", "max-w-[450px]"].join(" ");
+  const leftSide = [
+    "flex",
+    "flex-col",
+    "lg:max-w-[450px]",
+    "justify-center",
+    "lg:justify-start",
+    "lg:items-start",
+    "items-center",
+  ].join(" ");
 
   const mainImageContainer = [
     "relative",
     "mb-2",
-    "w-[450px]",
-    "h-[450px]",
+    "sm:w-[450px]",
+    "sm:h-[450px]",
+    "w-[250px]",
+    "h-[250px]",
   ].join(" ");
 
   const mainImage = ["rounded-lg", "object-fill"].join(" ");
 
-  const imageThumbnails = ["flex", "w-[450px]", "gap-2"].join(" ");
+  const imageThumbnails = ["w-[450px]", "gap-2", "hidden", "sm:flex"].join(" ");
 
   const singleThumbnailContainer = ["relative", "w-[160px]", "h-[120px]"].join(
     " "
